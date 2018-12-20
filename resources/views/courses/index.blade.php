@@ -1,4 +1,4 @@
 @extends('layouts.default')
 @section('content')
-<h1>Laramarket !!!</h1>
+    <h1>Les courses</h1>
 @stop
