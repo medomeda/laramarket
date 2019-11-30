@@ -1,3 +1,3 @@
-## A propos LaraMarket
+## A propos de LaraMarket
 
-Laravel est une application de mise en relation
+LaraMarket est une application de mise en relation
