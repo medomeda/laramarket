@@ -34,10 +34,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Les annonces') }}</a>
+                            <a class="nav-link" href="{{ route('annonces.index') }}">{{ __('Les annonces') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Déposer une annonce') }}</a>
+                            <a class="nav-link" href="{{ route('annonces.create') }}">{{ __('Déposer une annonce') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Centres de dépot') }}</a>
@@ -81,8 +81,30 @@
         </nav>
 
         <main class="py-4">
+            
+            <div class="container">
+                @if(session()->get('success'))
+                    <div class="alert alert-success">
+                    {{ session()->get('success') }}  
+                    </div>
+                @endif
+            </div>
+
             @yield('content')
         </main>
+
+        <footer>
+            <div class="container">
+                <hr>
+            </div>
+        </footer>
+        
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+
+        @yield('scripts')
+
+
     </div>
 </body>
 </html>

@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('courses', 'CourseController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('categories', 'CategorieController');
+Route::resource('annonces', 'AnnonceController');
