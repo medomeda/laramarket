@@ -24,3 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('categories', 'CategorieController');
 Route::resource('annonces', 'AnnonceController');
+Route::resource('centredepots', 'CentredepotController');

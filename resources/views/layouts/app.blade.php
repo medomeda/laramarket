@@ -40,7 +40,7 @@
                             <a class="nav-link" href="{{ route('annonces.create') }}">{{ __('Déposer une annonce') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Centres de dépot') }}</a>
+                            <a class="nav-link" href="{{ route('centredepots.index') }}">{{ __('Centres de dépot') }}</a>
                         </li>
                     </ul>
 
