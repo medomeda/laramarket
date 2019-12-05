@@ -27,4 +27,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function annonce()
+    {
+        return $this->hasMany(Annonce::class);
+    }
 }
